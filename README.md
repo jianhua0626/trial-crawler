@@ -17,11 +17,11 @@
     - DB_USERNAME
     - DB_PASSWORD
     - PAGESPEED_INSIGHTS_API_KEY
-4. Set PAGESPEED_INSIGHTS_API_KEY in .env file
-5. Input Command
+4. Input Command
     - composer install
+    - php artisan key:generate
     - php artisan migrate
     - php artisan storage:link
     - php artisan serve --host=0.0.0.0
-6. Visit localhost:8000
+6. Visit 127.0.0.1:8000
 
