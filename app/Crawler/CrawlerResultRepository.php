@@ -10,7 +10,7 @@ class CrawlerResultRepository
     public function paginate(int $perPage): LengthAwarePaginator
     {
         return CrawlerResult::query()
-                            ->select(['id', 'screenshot', 'title', 'description',])
+                            ->select(['id', 'screenshot', 'title', 'description', 'created_at'])
                             ->orderByDesc('id')
                             ->paginate($perPage);
     }
